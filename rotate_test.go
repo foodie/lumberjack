@@ -11,6 +11,7 @@ import (
 	"gopkg.in/natefinch/lumberjack.v2"
 )
 
+//根据信号去分文件
 // Example of how to rotate in response to SIGHUP.
 func ExampleLogger_Rotate() {
 	l := &lumberjack.Logger{}

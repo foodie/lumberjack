@@ -9,6 +9,8 @@ import (
 // To use lumberjack with the standard library's log package, just pass it into
 // the SetOutput function when your application starts.
 func Example() {
+
+	//新建一个logger的output
 	log.SetOutput(&lumberjack.Logger{
 		Filename:   "/var/log/myapp/foo.log",
 		MaxSize:    500, // megabytes
